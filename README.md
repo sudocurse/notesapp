@@ -11,31 +11,11 @@ Notes   1008 apresswa    4u      REG                1,4     395552  1470465 /Use
 Notes   1008 apresswa    5u      REG                1,4      32768  1470466 /Users/apresswa/Library/Containers/com.apple.Notes/Data/Library/Notes/NotesV7.storedata-shm
 ```
 
-I put these words into an exclusion list:
-```
-NAME
-netsrc
-Fonts
-Resources
-"\.maps"
-'\-wal'
-'\-shm'
-kbdx
-csstore
-dyld
-langid
-Diag
-Latn
-timezone
-icu
-Parsec
-metal
-null
-```
+There's a lot of crap in the filenames you get by the lsof of the Notes processes, both in sqlite temporary files and other shit. So I put a bunch of stuff into an inclusion list (it's in `notes-grep-exclude.txt`- hopefully i'm not filtering out anything important)
 
 And then grepped them:
 ```
-5677 ◯  {lsof -p 966; lsof -p 1008} | grep -v -f tmp/notes-grep-exclude.txt | awk '{ $1=$2=""; $3=$4=""; $5=$6=""; $7=$8="" ; print $0}' | cut -d ' ' -f 9-
+5677 ◯  {lsof -p 966; lsof -p 1008} | grep -v -f notes-grep-exclude.txt | awk '{ $1=$2=""; $3=$4=""; $5=$6=""; $7=$8="" ; print $0}' | cut -d ' ' -f 9-
 /Users/apresswa/Library/Containers/com.apple.Notes.datastore/Data
 /System/Library/PrivateFrameworks/NotesShared.framework/Versions/A/XPCServices/com.apple.Notes.datastore.xpc/Contents/MacOS/com.apple.Notes.datastore
 /Users/apresswa/Library/Group Containers/group.com.apple.notes/NoteStore.sqlite-shm
@@ -61,3 +41,5 @@ And then grepped them:
 /Users/apresswa/Library/Containers/com.apple.Notes/Data/Library/Saved Application State/com.apple.Notes.savedState/window_1.data
 /Users/apresswa/Library/Containers/com.apple.Notes/Data/Library/Saved Application State/com.apple.Notes.savedState/window_3.data
 ```
+
+
