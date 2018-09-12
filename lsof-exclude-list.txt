@@ -1,0 +1,6 @@
+directory$
+broken sym
+No such
+PNG
+TIFF
+JPEG
