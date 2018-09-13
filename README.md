@@ -41,6 +41,7 @@ So these files
 Those are all the SQL dbs
 
 and these are all the rest:
+
 ```/Users/apresswa/Library/Containers/com.apple.Notes/Data/Library/Preferences/com.xerox.xeroxfeatures.pde.plist:                                                                                                   XML 1.0 document text, ASCII text
 /Users/apresswa/Library/Containers/com.apple.Notes/Data/Library/Preferences/ByHost/com.apple.Notes.A17F494D-C16A-5E62-A7EE-836E5FE9202E.plist:                                                                   Apple binary property list
 /Users/apresswa/Library/Containers/com.apple.Notes/Data/Library/Preferences/ByHost/com.apple.Notes.SharingExtension.A17F494D-C16A-5E62-A7EE-836E5FE9202E.plist:                                                  Apple binary property list
