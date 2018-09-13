@@ -37,9 +37,10 @@ Okay, so back to the original shit, here's what's left:
 * `Z_MODELCACHE`
 * `ACHANGE` transactions i guess
 * `ATRANSACTION` timestamps, author, "bundleid" which is usually com.apple.Notes but in one instance it's AAACCOUNTS.com.apple.accountsd
+space in the fucking filepath, but the containing folder, `/Users/apresswa/Library/Group Containers/group.com.apple.notes/`, seems to have all of the media i have up there. 
 
 ## NotesV7.storedata
 empty. this is just the stock db you get with the "On My Mac" option before you hook up icloud
 
 ## Cache.db
-has a cfurl_cache_response table that seems to have... cached thumbnails? URLs from all the sites i visit. now.... these things also exist in the same folder as this db under `fsCachedData`
+has a cfurl_cache_response table that seems to have... cached thumbnails? URLs from all the sites i visit. now.... these things also exist in the same folder as this db under `fsCachedData` and probably the Group Containers one
