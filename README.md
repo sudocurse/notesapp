@@ -31,6 +31,7 @@ So these files
 * `/Users/apresswa/Library/Containers/com.apple.Notes.datastore/Data` is an empty directory structure. Symlinks are probably just to get config files and shit from outside the sandbox.\*
 * `/System/Library/PrivateFrameworks/NotesShared.framework/Versions/A/XPCServices/com.apple.Notes.datastore.xpc/Contents/MacOS/com.apple.Notes.datastore` is an executable and seems to be what persists data to iCloud and local storage.
 * /Users/apresswa/Library/Containers/com.apple.Notes/Data has a lot of stuff, it's all of my shit. Going through this directory structure\* it looks like apart from all my uploaded file blobs there's also a lot of other metadata stuff.
+
 ```/Users/apresswa/Library/Containers/com.apple.Notes/Data/CloudKit/8dfaed7cb02f131324842fa27d653c460d733303/Records/pcs.db:                                                                                        SQLite 3.x database, user version 8, last written using SQLite version 3019003
 /Users/apresswa/Library/Containers/com.apple.Notes/Data/CloudKit/8dfaed7cb02f131324842fa27d653c460d733303/Records/Records.db:                                                                                    SQLite 3.x database, user version 165930232, last written using SQLite version 3019003
 /Users/apresswa/Library/Containers/com.apple.Notes/Data/CloudKit/8dfaed7cb02f131324842fa27d653c460d733303/MMCS/.cs/ChunkStoreDatabase:                                                                           SQLite 3.x database, last written using SQLite version 3019003
@@ -38,7 +39,8 @@ So these files
 /Users/apresswa/Library/Containers/com.apple.Notes/Data/Library/Notes/NotesV7.storedata:                                                                                                                         SQLite 3.x database, last written using SQLite version 3019003
 /Users/apresswa/Library/Containers/com.apple.Notes/Data/Library/Caches/com.apple.Notes/Cache.db:                                                                                                                 SQLite 3.x database, last written using SQLite version 3019003```
 
-Those are all the SQL dbs
+# Those are all the SQL dbs
+github wtf separate these code sections
 
 and these are all the rest:
 
