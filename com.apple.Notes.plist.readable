@@ -1,0 +1,73 @@
+{
+  "ArchivedUIState" => {
+    "currentNote" => "16852202-9D41-41F8-A471-124A9F80FFB1"
+    "currentNoteFolder" => "28E09C38-CFE1-47D1-A17C-0EA482B81D47"
+    "expandedFolders" => [
+      0 => "28E09C38-CFE1-47D1-A17C-0EA482B81D47"
+      1 => "80EE1DE7-39F3-4314-A845-275E0A069919"
+      2 => "6DD0CC01-EDA3-4647-8188-F0799B67843A"
+      3 => "794103AD-2EC1-4A0D-8674-3CCCECAFE543"
+      4 => "LocalAccount"
+    ]
+    "folderListHidden" => 0
+  }
+  "CloudKitZonesNeedingFetchChanges" => [
+  ]
+  "DidChooseToMigrateLocalAccount" => 1
+  "DidFixExcludedFromBackupFlags" => 1
+  "DidFixGallerySubAttachments" => 1
+  "DidMigrateLocalAccount" => 1
+  "didShowMoveToRecentyDeletedFolderAlert" => 1
+  "hasPopulatedReplicaIDUserIDMapping" => 1
+  "hasShownWelcomeScreen" => 1
+  "ICFixUnappliedEncryptedRecordsLaunchTask" => 1
+  "lastKnownOperatingSystemVersion" => {
+    "majorVersion" => 10
+    "minorVersion" => 13
+    "patchVersion" => 6
+  }
+  "lastShownStartupVersion" => [
+    0 => 10
+    1 => 13
+    2 => 2
+  ]
+  "LastVacuumDate" => 558407947.303252
+  "NotesIndexerState-HTML" => {
+    "NeedsReindexing" => 0
+    "ObjectIDsByIdentifier" => {
+    }
+  }
+  "NotesIndexerState-Modern" => {
+    "NeedsReindexing" => 0
+    "ObjectIDsByIdentifier" => {
+    }
+  }
+  "NotesIndexerState-Modern-ObjectIDsToIgnore" => [
+  ]
+  "NSSplitView Subview Frames noteSplitViewAutoSaveName" => [
+    0 => "0.000000, 0.000000, 201.000000, 839.000000, NO, NO"
+    1 => "202.000000, 0.000000, 575.000000, 839.000000, NO, NO"
+  ]
+  "NSSplitView Subview Frames splitViewAutoSaveName" => [
+    0 => "0.000000, 0.000000, 150.000000, 839.000000, NO, NO"
+    1 => "151.000000, 0.000000, 777.000000, 839.000000, NO, NO"
+  ]
+  "NSToolbar Configuration 15AA1FB5-7720-4936-A70C-F303A33DDFFC" => {
+    "TB Display Mode" => 2
+    "TB Icon Size Mode" => 1
+    "TB Is Shown" => 1
+    "TB Size Mode" => 1
+  }
+  "NSToolbar Configuration BD33C13F-3759-40D2-A50F-C8B2A603B445" => {
+    "TB Display Mode" => 2
+    "TB Icon Size Mode" => 1
+    "TB Is Shown" => 1
+    "TB Size Mode" => 1
+  }
+  "NSWindow Frame Notes" => "467 -36 928 839 0 0 1680 1027 "
+  "NSWindow Frame NSFontPanel" => "1198 154 445 237 0 0 1680 1027 "
+  "OSVersionStringOfLastRun_DidSetReindexEverythingFlagPerUpgrade" => "10-13-6"
+  "PMPrintingExpandedStateForPrint2" => 1
+  "ShouldContinuouslyCheckSpelling" => 0
+  "timeStampForPreviousLogging" => 2018-09-12 01:16:47 +0000
+}

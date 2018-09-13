@@ -32,6 +32,7 @@ So these files
 * `/System/Library/PrivateFrameworks/NotesShared.framework/Versions/A/XPCServices/com.apple.Notes.datastore.xpc/Contents/MacOS/com.apple.Notes.datastore` is an executable and seems to be what persists data to iCloud and local storage.
 * ~/Library/Containers/com.apple.Notes/Data has a lot of stuff, it's all of my shit. Going through this directory structure\* it looks like apart from all my uploaded file blobs there's also a lot of other metadata stuff.
 
+
 ```~/Library/Containers/com.apple.Notes/Data/CloudKit/8dfaed7cb02f131324842fa27d653c460d733303/Records/pcs.db:                                                    SQLite 3.x database, user version 8, last written using SQLite version 3019003
 ~/Library/Containers/com.apple.Notes/Data/CloudKit/8dfaed7cb02f131324842fa27d653c460d733303/Records/Records.db:                                                SQLite 3.x database, user version 165930232, last written using SQLite version 3019003
 ~/Library/Containers/com.apple.Notes/Data/CloudKit/8dfaed7cb02f131324842fa27d653c460d733303/MMCS/.cs/ChunkStoreDatabase:                                        SQLite 3.x database, last written using SQLite version 3019003
@@ -40,10 +41,7 @@ So these files
 ~/Library/Containers/com.apple.Notes/Data/Library/Caches/com.apple.Notes/Cache.db:                                                                                                                 SQLite 3.x database, last written using SQLite version 3019003
 ```
 
-# Those are all the SQL dbs
-github wtf separate these code sections
-
-and these are all the rest:
+Those are all the SQL dbs and these are all the rest:
 
 ```~/Library/Containers/com.apple.Notes/Data/Library/Preferences/com.xerox.xeroxfeatures.pde.plist:          XML 1.0 document text, ASCII text
 ~/Library/Containers/com.apple.Notes/Data/Library/Preferences/ByHost/com.apple.Notes.A17F494D-C16A-5E62-A7EE-836E5FE9202E.plist:          Apple binary property list
@@ -53,6 +51,13 @@ and these are all the rest:
 ~/Library/Containers/com.apple.Notes/Data/Library/Caches/com.apple.Notes/fsCachedData/1AFC6CE5-585A-4D01-AE7F-A0F52D19E691:          ASCII text, with very long lines, with no line terminators
 ~/Library/Containers/com.apple.Notes/Data/Library/Caches/RemoteConfiguration.plist:          XML 1.0 document text, ASCII text
 ```
+
+* `xeroxfeatures` is empty and probably there to enable some sort of printing
+* `A17F49D....plist` is a binary plist, and just has a uuid in it
+* the next `SharingExtension` version of it is the same thing with a diff UUID
+* The following one is the `com.apple.Notes.plist` file which has a lot of config in it. i probably dont really care abt the rest. it has some keys like `ArchivedUIState` which tells you about expanded folders... DidChooseToMigrateLocalAccount, DidMigrateLocalAccount, NotesIndexerState-HTML (and -Modern). Some Split view subview frames named here. some timestamps for logging references and state stuff for CloudKit. this checks if everything's been synced
+I converted this with `plutil -p ~/Library/Containers/com.apple.Notes/Data/Library/Preferences/com.apple.Notes.plist > com.apple.Notes.plist.readable` and committed the file here. 
+* 
 
 
 
