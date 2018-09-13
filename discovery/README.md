@@ -40,6 +40,9 @@ So these files
 ~/Library/Containers/com.apple.Notes/Data/Library/Notes/NotesV7.storedata:                                                                                                                         SQLite 3.x database, last written using SQLite version 3019003
 ~/Library/Containers/com.apple.Notes/Data/Library/Caches/com.apple.Notes/Cache.db:                                                                                                                 SQLite 3.x database, last written using SQLite version 3019003
 ```
+Lets put this whole discussion in a separate file, [databases.md]
+
+
 
 Those are all the SQL dbs and these are all the rest:
 
@@ -57,7 +60,10 @@ Those are all the SQL dbs and these are all the rest:
 * the next `SharingExtension` version of it is the same thing with a diff UUID
 * The following one is the `com.apple.Notes.plist` file which has a lot of config in it. i probably dont really care abt the rest. it has some keys like `ArchivedUIState` which tells you about expanded folders... DidChooseToMigrateLocalAccount, DidMigrateLocalAccount, NotesIndexerState-HTML (and -Modern). Some Split view subview frames named here. some timestamps for logging references and state stuff for CloudKit. this checks if everything's been synced
 I converted this with `plutil -p ~/Library/Containers/com.apple.Notes/Data/Library/Preferences/com.apple.Notes.plist > com.apple.Notes.plist.readable` and committed the file here. 
-* 
+* the `Cookies.binarycookies` file has some twitter data in it...? Not super relevant anyways
+* `1AFC6CE5` appears to be a CSS file for recaptcha?
+* RemoteConfiguration has some stuff with max attachment sizes and sub attachments and local throttling policy
+
 
 
 

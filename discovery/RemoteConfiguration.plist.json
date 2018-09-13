@@ -1,0 +1,56 @@
+{
+  "configurationVersion" => 2
+  "maxAttachmentsPerNote" => 100
+  "maximumAttachmentSizeMB" => 16384
+  "maxInlineAssetSizeBytes" => 102400
+  "maxSubAttachmentsPerAttachment" => 24
+  "minimumClientVersions" => {
+    "iOS" => "9,0,0"
+    "OSX" => "10,11,0"
+  }
+  "pollingIntervalSeconds" => 120
+  "resultsLimitPerSyncOperation" => 50
+  "throttlingPolicy" => [
+    0 => {
+      "count" => 200
+      "intervalSeconds" => 1
+    }
+    1 => {
+      "count" => 200
+      "intervalSeconds" => 5
+    }
+    2 => {
+      "count" => 100
+      "intervalSeconds" => 10
+    }
+    3 => {
+      "count" => 100
+      "intervalSeconds" => 30
+    }
+    4 => {
+      "count" => 50
+      "intervalSeconds" => 60
+    }
+    5 => {
+      "count" => 10
+      "intervalSeconds" => 300
+    }
+    6 => {
+      "count" => 10
+      "intervalSeconds" => 900
+    }
+    7 => {
+      "count" => 10
+      "intervalSeconds" => 1800
+    }
+    8 => {
+      "count" => 9
+      "intervalSeconds" => 2400
+    }
+    9 => {
+      "count" => 1
+      "intervalSeconds" => 26800
+    }
+  ]
+  "throttlingPolicyResetIntervalSeconds" => "86400"
+}
